@@ -1,12 +1,8 @@
-import createBrowserHistory from 'history/createBrowserHistory';
 import logger from 'redux-logger';
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import rootSaga from 'app/redux/sagas';
 import reducers from 'app/redux/reducers';
-
-// Create a history
-const history = createBrowserHistory();
 
 // Create middlewares
 const sagaMiddleware = typeof createSagaMiddleware === 'function'
@@ -41,4 +37,4 @@ if (module.hot) {
 const action = (type, payload) => store.dispatch({ type, payload });
 
 // Export history and store
-export { history, store, action };
+export { store, action };

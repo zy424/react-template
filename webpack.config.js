@@ -162,9 +162,10 @@ const config = {
         fs: 'empty',
     },
     resolve: {
-        alias: {
-            app: resolve(__dirname, 'src/'),
-        },
+      extensions: [".js", ".jsx", ".json"],
+      alias: {
+          app: resolve(__dirname, 'src'),
+      },
     },
 };
 

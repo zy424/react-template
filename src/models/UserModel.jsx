@@ -1,4 +1,4 @@
-import Model from "app/models/Model";
+import Model from "app/models/Model"
 
 export default class UserModel extends Model {
   constructor(data = {}) {
@@ -8,6 +8,6 @@ export default class UserModel extends Model {
       name: '',
       score: 0.0,
       ...data,
-    });
+    })
   }
 }

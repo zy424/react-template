@@ -1,4 +1,4 @@
-import { fetchNumber } from '../../src/redux/sagas';
+import { fetchNumber } from '../../src/redux/sagas/index';
 import { expectSaga } from 'redux-saga-test-plan';
 
 it('Hello World Test', () => {

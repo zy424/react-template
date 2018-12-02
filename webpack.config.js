@@ -15,7 +15,7 @@ const config = {
             'webpack-dev-server/client?http://localhost:8080',
             'webpack/hot/only-dev-server',
             '@babel/polyfill',
-            './index.js',
+            './index.jsx',
             './assets/scss/main.scss',
         ],
     },

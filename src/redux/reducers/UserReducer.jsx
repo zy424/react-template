@@ -6,12 +6,12 @@ export default function userReducer(state = {
     users: [],
 }, action) {
     switch (action.type) {
-        case UserAction.USER_GOT:
-            return {
-                ...state,
-                isLoading: false,
-                users: action.payload,
-            }
+      case UserAction.USER_GOT:
+        return {
+            ...state,
+            isLoading: false,
+            users: action.payload,
+        }
       case UserAction.USER_LOADING:
         return {
           ...state,
@@ -23,6 +23,6 @@ export default function userReducer(state = {
             searchName: action.payload,
           }
         default:
-            return state
+          return state
     }
 }

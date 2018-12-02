@@ -1,4 +1,4 @@
-import createBrowserHistory from 'history/createBrowserHistory';
+import createBrowserHistory from 'history/createBrowserHistory'
 
 // Create a history
-export const history = createBrowserHistory();
+export const history = createBrowserHistory()
